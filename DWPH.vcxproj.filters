@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="LS">
+      <UniqueIdentifier>{71366205-44ca-40d4-a61f-41d59e0febf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{6656e366-cc7c-4f00-b55e-874293a3a75d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{8f98cd06-3a90-4fe4-b91b-a2d738c8ac8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{a82cba23-9de0-45c2-b1e3-2eb1666702de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\Header Files">
+      <UniqueIdentifier>{c5d4856c-a9a1-461a-ba10-79f41bda9397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\Source Files">
+      <UniqueIdentifier>{083981ee-d225-44f3-a4b1-a65a48c0e594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c2aac2a8-6119-4568-a889-30e85160602a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Header Files">
+      <UniqueIdentifier>{118b82ac-2130-4029-8aec-b006a17d9062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Source Files">
+      <UniqueIdentifier>{53676b15-2eb1-4680-9136-e616683eaa56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects">
+      <UniqueIdentifier>{01a36557-a845-47f3-be27-89329f8e32cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Header Files">
+      <UniqueIdentifier>{e405fbe4-d78b-4375-862c-b260ac7ddc09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Source Files">
+      <UniqueIdentifier>{7b2d65a8-f285-4890-91c5-6c2f05364157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuffInstance">
+      <UniqueIdentifier>{67136920-d808-4a47-8e8b-83a23e098fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Offsets">
+      <UniqueIdentifier>{bff952be-4c75-4914-b4c0-861206031b34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{be200be4-1355-4039-904b-3c9fc185dc45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SpellBook">
+      <UniqueIdentifier>{c17366db-a38d-48fa-8357-d43a6b7f36cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{37398269-a7bf-41c5-b8d7-441798ea9a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Header Files">
+      <UniqueIdentifier>{b9bd19be-e658-4889-84aa-d98cec108a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Source Files">
+      <UniqueIdentifier>{1900142d-8bf9-4425-aa5e-7ff28d095752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectManager">
+      <UniqueIdentifier>{b0c17453-6f65-473d-a3f9-bbfeec079421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Scripts">
+      <UniqueIdentifier>{1a7cf74a-73de-4231-ba8e-42a07731fe9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Scripts\BlitzCrank">
+      <UniqueIdentifier>{0b71b6f3-2059-44ca-9655-23a106d33879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Prediction">
+      <UniqueIdentifier>{5cab2b4b-5f23-431b-866b-f750d1a3546b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RexyVectors">
+      <UniqueIdentifier>{4e3764ac-c876-4f33-bde7-7880a19c6012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Scripts\Humanizer">
+      <UniqueIdentifier>{c2633165-b6b4-4029-a5bb-7c80018c7f6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Scripts\Thresh">
+      <UniqueIdentifier>{b6fffd7b-ff80-44c1-8096-aa9c537b8903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Scripts\Caitl">
+      <UniqueIdentifier>{13edaf86-705a-4f2e-9516-f1e891497e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Scripts\TargetSelector">
+      <UniqueIdentifier>{6045b573-380b-498f-b270-eb389db850dd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LSRender.cpp">
+      <Filter>LS</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>ImGui\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>ImGui\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>ImGui\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tabs.cpp">
+      <Filter>ImGui\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp">
+      <Filter>ImGui\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aDetour.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="typdefs.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Minion.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_AI_Base.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BuffManagerBase.cpp">
+      <Filter>BuffInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="LBuffInstance.cpp">
+      <Filter>BuffInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellBook.cpp">
+      <Filter>SpellBook</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LObjectManager.cpp">
+      <Filter>ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Hero.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Humanizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Prediction.cpp">
+      <Filter>Prediction</Filter>
+    </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LSUtils.hpp">
+      <Filter>LS</Filter>
+    </ClInclude>
+    <ClInclude Include="LSRender.h">
+      <Filter>LS</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="typdefs.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>ImGui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>ImGui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx9.h">
+      <Filter>ImGui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>ImGui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\stb_rect_pack.h">
+      <Filter>ImGui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\stb_textedit.h">
+      <Filter>ImGui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\stb_truetype.h">
+      <Filter>ImGui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_tabs.h">
+      <Filter>ImGui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrbWalker.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentBase.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="adDetour.hpp">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Logging.hpp">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Minion.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="LCoreTest.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_AI_Base.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectsTR.h">
+      <Filter>Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffManagerBase.h">
+      <Filter>BuffInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="LBuffInstance.h">
+      <Filter>BuffInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="r3dRitoRender.h">
+      <Filter>LS</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellBook.h">
+      <Filter>SpellBook</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackableUnit.h">
+      <Filter>GameObject\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LObjectManager.h">
+      <Filter>ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="TospikBlitz.h">
+      <Filter>Components\Scripts\BlitzCrank</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternList.h" />
+    <ClInclude Include="rVectors.hpp">
+      <Filter>RexyVectors</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Hero.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Humanizer.h" />
+    <ClInclude Include="TospikThresh.h">
+      <Filter>Components\Scripts\Thresh</Filter>
+    </ClInclude>
+    <ClInclude Include="Prediction.h">
+      <Filter>Prediction</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpPredict.hpp">
+      <Filter>Prediction</Filter>
+    </ClInclude>
+    <ClInclude Include="TospikCait.hpp">
+      <Filter>Components\Scripts\Caitl</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TospikBrand.hpp">
+      <Filter>Components\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetSelector.hpp">
+      <Filter>Components\Scripts\TargetSelector</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODOS.txt" />
+  </ItemGroup>
+</Project>
