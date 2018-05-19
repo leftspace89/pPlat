@@ -51,11 +51,11 @@ char *GameObject::namechar()
 
 std::string GameObject::GetName()
 {
-	std::string ss(namechar());
+	//std::string ss(namechar());
 	
-	return ss;
+	//return ss;
 	
-	//return *reinterpret_cast<String*>(this + static_cast<int>(Offsets::oGameObject::Name));
+	return *reinterpret_cast<String*>(this + static_cast<int>(Offsets::oGameObject::Name));
 	
 	
 }

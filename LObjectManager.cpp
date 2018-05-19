@@ -23,6 +23,9 @@ std::vector<GameObject*> ObjectManager::GetMinions(ObjectTeam type)
 			auto unit = (Obj_AI_Base*)unitarray[i];
 			if (unit)
 			{
+
+
+				//ENGINE_MSG("name : %d\n", unit->GetType());
 				
 				if (strstr(unit->GetName().c_str(), "Minion") == 0)
 					continue;

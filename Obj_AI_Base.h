@@ -20,8 +20,8 @@ public:
 	MAKE_GET(FlatMagicReduction, float, 0xA0);
 	MAKE_GET(PercentMagicReduction, float, 0xB0);
 	MAKE_GET(FlatCastRangeMod, float, 0xC0);
-	MAKE_GET(AttackSpeedMod, float, 0xD0);
-	MAKE_GET(BaseAttackDamage, float, 0xE0);
+	MAKE_GET(AttackSpeedMod, float, 0xE0); // 8.10 - OR 0xd0
+	MAKE_GET(BaseAttackDamage, float, 0x100); // 8.10
 	MAKE_GET(BaseAttackDamageSansPercentScale, float, 0xF0);
 	MAKE_GET(FlatBaseAttackDamageMod, float, 0x100);
 	MAKE_GET(PercentBaseAttackDamageMod, float, 0x110);
@@ -29,14 +29,14 @@ public:
 	MAKE_GET(ScaleSkinCoef, float, 0x130);
 	MAKE_GET(Dodge, float, 0x140);
 	MAKE_GET(Crit, float, 0x150);
-	MAKE_GET(Armor, float, 0x160);
-	MAKE_GET(BonusArmor, float, 0x170);
+	MAKE_GET(Armor, float, 0x180); // 8.10
+	MAKE_GET(BonusArmor, float, 0x190);//8.10
 	MAKE_GET(SpellBlock, float, 0x180);
 	MAKE_GET(BonusSpellBlock, float, 0x190);
 	MAKE_GET(HPRegenRate, float, 0x1A0);
 	MAKE_GET(BaseHPRegenRate, float, 0x1B0);
-	MAKE_GET(MoveSpeed, float, 0x1C0);
-	MAKE_GET(AttackRangeR, float, 0x1E0);
+	MAKE_GET(MoveSpeed, float, 0x1E0); // 8.10
+	MAKE_GET(AttackRangeR, float, 0x200);//8.10
 	MAKE_GET(FlatBubbleRadiusMod, float, 0x1F0);
 	MAKE_GET(PercentBubbleRadiusMod, float, 0x200);
 	MAKE_GET(FlatArmorPenetration, float, 0x210);

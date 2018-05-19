@@ -13,7 +13,7 @@ mov eax,[ecx+000000FC]
 */
 
 /*Gold
-89 34 ? 8b 5c ? ? 8b 44
+89 34 ? 8b 5c ? ? 8b 44 << find out what writes that shhhhhhit eax is offset 
 offset eax
 mov [ebx+eax],esi
 */
@@ -38,9 +38,10 @@ call dword ptr [esi+000002E0]
 lea ecx,[ebx+00000678]  ebx+offset
 */
 /*NetWorkID
-ff 71 ? ff 71 ? 8b cd e8 ? ? ? ? 8b c8
-push [ecx+74] ECX+OFFSET
-push [ecx+08]
+39 77 ? 74 ? 57
+cmp [edi+6C],esi  6C OFFSET
+je "League of Legends.AK::WriteBytesMem::Bytes"+79392 { ->League of Legends.AK::WriteBytesMem::Bytes+79392 }
+push edi
 
 */
 /*BuffManager
@@ -114,8 +115,8 @@ https://my.mixtape.moe/mnotls.png looks like xd
 
 8b 88 ? ? ? ? 2b 88 ? ? ? ? b8 ? ? ? ? f7 e9
 8b 8f ? ? ? ? 2b 8f ? ? ? ? 8b b7
-mov ecx,[eax+000001C0]
-sub ecx,[eax+000001BC]
+mov ecx,[eax+000001C0] // end
+sub ecx,[eax+000001BC] // begin
 */
 
 /*Lolcursor

@@ -55,16 +55,7 @@ public:
 		if (bEnabled)
 		{
 	
-			if (lastspell !=RVector3(0,0,0))
-			{
-
-				RVector3 ScreenS,local2d;
-				if (render.r3dWorldToScreen(&ObjectManager::GetPlayer()->GetPosition(), &local2d))
-				if (render.r3dWorldToScreen(&lastspell, &ScreenS))
-				{
-					render.DrawLine(local2d.x, local2d.y, ScreenS.x, ScreenS.y, 10, D3DCOLOR_ARGB(255, 255, 0, 0));
-				}
-			}
+		
 
 #ifndef localplayerexample
 			auto player = ObjectManager::GetPlayer();
@@ -86,14 +77,14 @@ public:
 				auto base = (Obj_AI_Base*)minion;
 				auto basecord = base->GetPosition();//LinePred->Calculate(base);
 
-				//RVector3 predict2;
-				//render.r3dWorldToScreen(&ObjectManager::GetPlayer()->GetPosition(), &predict2);
-				//render.DrawString(predict2.x, predict2.y + (buffin * 10) + 50, D3DCOLOR_ARGB(255, 255, 255, 255), DT_LEFT, 15, "Buff : %s", name.c_str());
+				RVector3 predict2(0,0,0);
+				render.r3dWorldToScreen(&basecord, &predict2);
+				render.DrawString(predict2.x,predict2.y, D3DCOLOR_ARGB(255, 255, 255, 255), DT_LEFT, 15, "Minion : %.f",*base->GetHealth());
 			
 			}
 
 			
-#ifdef buffList
+#ifndef buffList
 			int buffin = 0;
 			for (auto buff : BuffInstance::GetBuffList(reinterpret_cast<GameObject*>(ObjectManager::GetPlayer())))
 			{
@@ -109,7 +100,7 @@ public:
 
 					RVector3 predict2;
 					render.r3dWorldToScreen(&ObjectManager::GetPlayer()->GetPosition(), &predict2);
-					render.DrawString(predict2.x, predict2.y+(buffin*10)+50, D3DCOLOR_ARGB(255, 255, 255, 255), DT_LEFT, 15, "Buff : %s",name.c_str());
+					render.DrawString(predict2.x, predict2.y+(buffin*10)+50, D3DCOLOR_ARGB(255, 255, 255, 255), DT_LEFT, 15, "Buff : %s", name.c_str());
 					buffin++;
 				}
 			}
@@ -130,8 +121,13 @@ public:
 			
 
 
+
+
 			if (GetAsyncKeyState(VK_LSHIFT))
 			{
+
+				
+
 				//ObjectManager::GetPlayer()->GetSpellbook()->CastSpell(SpellSlot::Q, RVector3(0, 0, 0), RVector3(0,0,0));
 				auto aim = *ObjectManager::GetPlayer()->GetAIManager_Client();
 				auto comm = aim->GetActor();

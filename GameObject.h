@@ -167,9 +167,9 @@ public:
 	
 	MAKE_GET(Team, uint, Offsets::oGameObject::Team);
 	MAKE_GET(BBox, BBox, Offsets::oGameObject::BBox);
-	MAKE_GET(HeroName, String, 0x1738);
-	MAKE_GET(Visible, bool, 0x02B0);
-	MAKE_GET(IsInvulnerable, bool, 0x0394);
+	MAKE_GET(HeroName, String, Offsets::oGameObject::ChampName);
+	MAKE_GET(Visible, bool, Offsets::oGameObject::VisibleOnScreen);
+	MAKE_GET(IsInvulnerable, bool, Offsets::oGameObject::Vur);
 
 	//Lua API
 	

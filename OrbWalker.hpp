@@ -555,8 +555,8 @@ public:
 		{
 			if (mInfo->sender == nullptr)
 				continue;
-			//if (*mInfo->sender->GetTeam() == *localplayer->GetTeam())
-			//	continue;
+			if (*mInfo->sender->GetTeam() == *localplayer->GetTeam())
+				continue;
 
 			RVector3 pos2d, spell2d, spellStart2d, spellend2d, local2d;
 
@@ -581,7 +581,7 @@ public:
 					render.r3dWorldToScreen(&lastResult, &to2d);
 #ifdef _DEBUG
 					render.DrawLine(from2d.x, from2d.y, to2d.x, to2d.y, 15, D3DCOLOR_ARGB(255, 0, 0, 255));
-					ENGINE_MSG("OrbWalker Disabled : %f\n", lastMisspeed);
+					//ENGINE_MSG("OrbWalker Disabled : %f\n", lastMisspeed);
 					render.DrawCircle((int)spellend2d.x, (int)spellend2d.y, mInfo->spellRadius, 50, D3DCOLOR_ARGB(255, 255, 0, 0));
 #endif
 					EvadeWalkerDisable = true;

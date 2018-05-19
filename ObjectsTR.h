@@ -3,53 +3,55 @@
 
 //-----------GAMEOBJECT-----------//
 
-enum class oGameObject //8.9
+enum class oGameObject //8.10
 {
-	Type = 0x4,
-	Team = 0x14,
-	Name = 0x1C,
-	Position = 0xF4,
-	ServerPosition = 0xF4,
-	BoundingRadius = 0x90,
-	BBox = 0x94,
-	IsDead = 0x118,
-	VisibleOnScreen = 0xDC,
-	NetworkId = 0x6C,
+	Type = 0x4, // 8.10
+	Team = 0x14, // 8.10
+	Name = 0x1C, // 8.10
+	Position = 0xF4, // 8.10
+	ServerPosition = 0xF4,  // 8.10
+	BoundingRadius = 0x78, 
+	BBox = 0x84,
+	IsDead = 0x118,//nupd
+	VisibleOnScreen = 0xC0,//8.10 bool  // or 2B0
+	NetworkId = 0x6C, // 8.10
+	ChampName = 0x1764,//8.10
+	Vur = 0x394,
 };
 
 //-----------ATTACKABLEUNIT-----------//
 
 enum class oAttackableUnit
 {
-	Health = 0x670,
-	MaxHealth = Health + 0x10,
-	Mana = 0x20c,
-	MaxMana = Mana + 0x10,
+	Health = 0x670, // 8.10
+	MaxHealth = Health + 0x10, // 8.10
+	Mana = 0x20c, // nupd  
+	MaxMana = Mana + 0x10, // nupd
 
-	IsBot = 0x1170,
-	HasBotAI = IsBot + 0x1,
+	IsBot = 0x1170, //nupd
+	HasBotAI = IsBot + 0x1,//nupd
 
-	IsInVulnerable = 0x2D0,
-	IsPhysicalImmune = IsInVulnerable + 0x10,
-	MagicImmune = IsPhysicalImmune + 0x10,
-	IsLifestealImmune = MagicImmune + 0x10,
+	IsInVulnerable = 0x2D0,//nupd
+	IsPhysicalImmune = IsInVulnerable + 0x10,//nupd
+	MagicImmune = IsPhysicalImmune + 0x10,//nupd
+	IsLifestealImmune = MagicImmune + 0x10,//nupd
 
-	IsZombie = 0x12,
+	IsZombie = 0x12,//nupd
 
-	ArmorMaterial = 0x330,
-	WeaponMaterial = 0x348,
+	ArmorMaterial = 0x330,//nupd
+	WeaponMaterial = 0x348,//nupd
 
-	AllShield = 0x194,
-	AttackShield = 0x0A88,
-	MagicShield = 0x0A90,
+	AllShield = 0x180,//8.10
+	AttackShield = 0x0A88, //nupd
+	MagicShield = 0x1A0, //8.10
 
-	OverrideCollisionRadius = 0x3a8, //dword ptr [edi+3C4h]
-	OverrideCollisionHeight = OverrideCollisionRadius + 0x4, //dword ptr [edi+3C0h]
-	PathfindingCollisionRadius = OverrideCollisionHeight + 0x4,
+	OverrideCollisionRadius = 0x3a8, //dword ptr [edi+3C4h] //nupd
+	OverrideCollisionHeight = OverrideCollisionRadius + 0x4, //dword ptr [edi+3C0h] //nupd
+	PathfindingCollisionRadius = OverrideCollisionHeight + 0x4, //nupd
 
-	Direction = 0x2BA0,
-	IsTargetable = 0x1E8,
-	IsTargetableToTeamFlags = 0x1F8,
+	Direction = 0x2BA0, //nupd
+	IsTargetable = 0x1E8,//nupd
+	IsTargetableToTeamFlags = 0x1F8,//nupd
 };
 
 //-----------AI_BASE-----------//
@@ -58,7 +60,7 @@ enum class Obj_AIBase
 {
 	ResourceName = 0x240,
 
-	Gold = 0x1210,//8.9
+	Gold = 0x1230,//8.10
 	GoldTotal = Gold + 0x10,
 
 	EvolvePoints = 0x35EC,
@@ -85,8 +87,8 @@ enum class Obj_AIBase
 	SkinName = 0x8d0, //INGAME
 
 					  //AIManager, Actor_Common
-					  AIManager = 0x175C,//8.9
-					  Actor_Common = 0x4, // 8.9
+					  AIManager = 0x177C,//8.10
+					  Actor_Common = 0x4, // 8.10
 
 					  //SetSkin
 					  CharacterDataStack = 0x33E8,
@@ -95,7 +97,7 @@ enum class Obj_AIBase
 					  UserComponent = 0x2ED0, //Capture
 
 											  //CharData
-											  CharData = 0xE18, //8.9
+											  CharData = 0xE18, //8.10
 
 																 // 6.1
 																 mPercentDamageToBarracksMinionMod = 0xE68,
@@ -212,7 +214,7 @@ enum class SpellbookStruct
 	TargetType = 0x8,
 	Owner = 0x1C,
 	SpellCaster_Client = 0x20,
-	GetSpell = 0x530, //8.9
+	GetSpell = 0x530, //8.10
 
 	SBookInst = 0x14
 };
@@ -260,15 +262,15 @@ enum class DamageInfo
 
 //-----------ActorCommon-----------//
 
-enum class ActorCommonStruct //8.8
+enum class ActorCommonStruct //8.10
 {
 	NavMesh = 0x1BC, //navmesh array
-	CurrentPosition = 0x2BC,
-	HasNavPath = 0x19c,
-	AINavPath = 0x0010,
-	NavBegin = 0x1BC,
-	NavEnd = 0x1C0,
-	Velocity=0x2C8
+	CurrentPosition = 0x2BC, //8.10
+	HasNavPath = 0x19c,  //8.10
+	AINavPath = 0x0010, //8.10
+	NavBegin = 0x1BC, // 8.10
+	NavEnd = 0x1C0, // 8.10
+	Velocity=0x2C8 // 8.10
 };
 
 
@@ -298,8 +300,8 @@ enum class ExperienceStruct
 
 enum class BuffManagerStruct
 {
-	GetBegin = 0x1258,//8.9
-	GetEnd = 0x125c // 8.9
+	GetBegin = 0x1278,//8.9
+	GetEnd = 0x127c // 8.9
 };
 
 //-----------RiotClock-----------//
