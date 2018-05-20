@@ -67,7 +67,7 @@ public:
 	enum class SpellHelper
 	{
 		
-		ComputeCharacterAttackCastDelay = 0x546A40, //8.10 - 83 ec ? 53 8b 5c ? ? 8b cb 56 -  57 8B 7C 24 08 8B 87 ? ? ? ? 8D 8F ? ? ? ? index 2
+		ComputeCharacterAttackCastDelay = 0x546AA0, //8.10 - 83 ec ? 53 8b 5c ? ? 8b cb 56 57 8b 03
 		ComputeCharacterAttackDelay = 0x546BB0, // 8.10 - 57 8B 7C 24 08 8B 87 ? ? ? ? 8D 8F ? ? ? ? index 1
 		GetBasicAttack = 0x0,//nupd
 	};
