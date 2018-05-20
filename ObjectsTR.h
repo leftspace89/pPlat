@@ -12,7 +12,7 @@ enum class oGameObject //8.10
 	ServerPosition = 0xF4,  // 8.10
 	BoundingRadius = 0x78, 
 	BBox = 0x84,
-	IsDead = 0x118,//nupd
+	IsDead = 0xF0,//8.10
 	VisibleOnScreen = 0xC0,//8.10 bool  // or 2B0
 	NetworkId = 0x6C, // 8.10
 	ChampName = 0x1764,//8.10
